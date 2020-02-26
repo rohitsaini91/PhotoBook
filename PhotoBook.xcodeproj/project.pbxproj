@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA4A1AF724062BAD00797F0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A1AF624062BAD00797F0E /* AppDelegate.swift */; };
+		FA4A1AF924062BAD00797F0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A1AF824062BAD00797F0E /* SceneDelegate.swift */; };
+		FA4A1AFB24062BAD00797F0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A1AFA24062BAD00797F0E /* ViewController.swift */; };
+		FA4A1AFE24062BAD00797F0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4A1AFC24062BAD00797F0E /* Main.storyboard */; };
+		FA4A1B0024062BAE00797F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4A1AFF24062BAE00797F0E /* Assets.xcassets */; };
+		FA4A1B0324062BAE00797F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4A1B0124062BAE00797F0E /* LaunchScreen.storyboard */; };
+		FA4A1B0E24062BAE00797F0E /* PhotoBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A1B0D24062BAE00797F0E /* PhotoBookTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA4A1B0A24062BAE00797F0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA4A1AEB24062BAD00797F0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA4A1AF224062BAD00797F0E;
+			remoteInfo = PhotoBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA4A1AF324062BAD00797F0E /* PhotoBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4A1AF624062BAD00797F0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA4A1AF824062BAD00797F0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA4A1AFA24062BAD00797F0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA4A1AFD24062BAD00797F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA4A1AFF24062BAE00797F0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA4A1B0224062BAE00797F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA4A1B0424062BAE00797F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA4A1B0924062BAE00797F0E /* PhotoBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4A1B0D24062BAE00797F0E /* PhotoBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBookTests.swift; sourceTree = "<group>"; };
+		FA4A1B0F24062BAE00797F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA4A1AF024062BAD00797F0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4A1B0624062BAE00797F0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA4A1AEA24062BAD00797F0E = {
+			isa = PBXGroup;
+			children = (
+				FA4A1AF524062BAD00797F0E /* PhotoBook */,
+				FA4A1B0C24062BAE00797F0E /* PhotoBookTests */,
+				FA4A1AF424062BAD00797F0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA4A1AF424062BAD00797F0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA4A1AF324062BAD00797F0E /* PhotoBook.app */,
+				FA4A1B0924062BAE00797F0E /* PhotoBookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA4A1AF524062BAD00797F0E /* PhotoBook */ = {
+			isa = PBXGroup;
+			children = (
+				FA4A1AF624062BAD00797F0E /* AppDelegate.swift */,
+				FA4A1AF824062BAD00797F0E /* SceneDelegate.swift */,
+				FA4A1AFA24062BAD00797F0E /* ViewController.swift */,
+				FA4A1AFC24062BAD00797F0E /* Main.storyboard */,
+				FA4A1AFF24062BAE00797F0E /* Assets.xcassets */,
+				FA4A1B0124062BAE00797F0E /* LaunchScreen.storyboard */,
+				FA4A1B0424062BAE00797F0E /* Info.plist */,
+			);
+			path = PhotoBook;
+			sourceTree = "<group>";
+		};
+		FA4A1B0C24062BAE00797F0E /* PhotoBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA4A1B0D24062BAE00797F0E /* PhotoBookTests.swift */,
+				FA4A1B0F24062BAE00797F0E /* Info.plist */,
+			);
+			path = PhotoBookTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA4A1AF224062BAD00797F0E /* PhotoBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA4A1B1224062BAE00797F0E /* Build configuration list for PBXNativeTarget "PhotoBook" */;
+			buildPhases = (
+				FA4A1AEF24062BAD00797F0E /* Sources */,
+				FA4A1AF024062BAD00797F0E /* Frameworks */,
+				FA4A1AF124062BAD00797F0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoBook;
+			productName = PhotoBook;
+			productReference = FA4A1AF324062BAD00797F0E /* PhotoBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA4A1B0824062BAE00797F0E /* PhotoBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA4A1B1524062BAE00797F0E /* Build configuration list for PBXNativeTarget "PhotoBookTests" */;
+			buildPhases = (
+				FA4A1B0524062BAE00797F0E /* Sources */,
+				FA4A1B0624062BAE00797F0E /* Frameworks */,
+				FA4A1B0724062BAE00797F0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA4A1B0B24062BAE00797F0E /* PBXTargetDependency */,
+			);
+			name = PhotoBookTests;
+			productName = PhotoBookTests;
+			productReference = FA4A1B0924062BAE00797F0E /* PhotoBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA4A1AEB24062BAD00797F0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Saini;
+				TargetAttributes = {
+					FA4A1AF224062BAD00797F0E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					FA4A1B0824062BAE00797F0E = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = FA4A1AF224062BAD00797F0E;
+					};
+				};
+			};
+			buildConfigurationList = FA4A1AEE24062BAD00797F0E /* Build configuration list for PBXProject "PhotoBook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA4A1AEA24062BAD00797F0E;
+			productRefGroup = FA4A1AF424062BAD00797F0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA4A1AF224062BAD00797F0E /* PhotoBook */,
+				FA4A1B0824062BAE00797F0E /* PhotoBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA4A1AF124062BAD00797F0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4A1B0324062BAE00797F0E /* LaunchScreen.storyboard in Resources */,
+				FA4A1B0024062BAE00797F0E /* Assets.xcassets in Resources */,
+				FA4A1AFE24062BAD00797F0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4A1B0724062BAE00797F0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA4A1AEF24062BAD00797F0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4A1AFB24062BAD00797F0E /* ViewController.swift in Sources */,
+				FA4A1AF724062BAD00797F0E /* AppDelegate.swift in Sources */,
+				FA4A1AF924062BAD00797F0E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4A1B0524062BAE00797F0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4A1B0E24062BAE00797F0E /* PhotoBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA4A1B0B24062BAE00797F0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA4A1AF224062BAD00797F0E /* PhotoBook */;
+			targetProxy = FA4A1B0A24062BAE00797F0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA4A1AFC24062BAD00797F0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA4A1AFD24062BAD00797F0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA4A1B0124062BAE00797F0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA4A1B0224062BAE00797F0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA4A1B1024062BAE00797F0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA4A1B1124062BAE00797F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA4A1B1324062BAE00797F0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q233F3ZPX;
+				INFOPLIST_FILE = PhotoBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.PhotoBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA4A1B1424062BAE00797F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q233F3ZPX;
+				INFOPLIST_FILE = PhotoBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.PhotoBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA4A1B1624062BAE00797F0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q233F3ZPX;
+				INFOPLIST_FILE = PhotoBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.PhotoBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoBook.app/PhotoBook";
+			};
+			name = Debug;
+		};
+		FA4A1B1724062BAE00797F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q233F3ZPX;
+				INFOPLIST_FILE = PhotoBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.PhotoBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoBook.app/PhotoBook";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA4A1AEE24062BAD00797F0E /* Build configuration list for PBXProject "PhotoBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4A1B1024062BAE00797F0E /* Debug */,
+				FA4A1B1124062BAE00797F0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA4A1B1224062BAE00797F0E /* Build configuration list for PBXNativeTarget "PhotoBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4A1B1324062BAE00797F0E /* Debug */,
+				FA4A1B1424062BAE00797F0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA4A1B1524062BAE00797F0E /* Build configuration list for PBXNativeTarget "PhotoBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4A1B1624062BAE00797F0E /* Debug */,
+				FA4A1B1724062BAE00797F0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA4A1AEB24062BAD00797F0E /* Project object */;
+}
