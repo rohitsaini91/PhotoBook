@@ -6,4 +6,9 @@
 //  Copyright © 2020 Saini. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+class CollectionViewSectionHeader: UICollectionReusableView {
+    @IBOutlet weak var title: UILabel!
+}

@@ -6,4 +6,12 @@
 //  Copyright © 2020 Saini. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class CollectionViewCell: UICollectionViewCell {
+
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var shotDetailsLabel: UILabel!
+}
+

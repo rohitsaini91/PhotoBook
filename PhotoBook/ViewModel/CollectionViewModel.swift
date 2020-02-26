@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class CollectionViewModel : NSObject {
+    init(view:CollectionViewControllerProtocol) {
+        super.init()
+    }
+}
