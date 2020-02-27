@@ -9,7 +9,17 @@
 import Foundation
 
 class CollectionViewModel : NSObject {
+    
+    weak var view:CollectionViewControllerProtocol?
+    var photoAlbum:Album?
+    
     init(view:CollectionViewControllerProtocol) {
         super.init()
+        self.view = view
+        if photoAlbum == nil {
+            photoAlbum = Album()
+        }
+        let path = Bundle.main.path(forResource: "Albums", ofType: "plist")
+        photoAlbum?.load(filePath:path)
     }
 }

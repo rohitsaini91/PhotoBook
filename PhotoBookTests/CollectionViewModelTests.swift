@@ -31,4 +31,9 @@ extension CollectionViewModelTests {
         let viewModel = CollectionViewModel(view:mockCollectionViewController!)
         XCTAssertNotNil(viewModel)
     }
+    
+    func testInit_ValidView_AlbumIVarIsNotNil() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        XCTAssertNotNil(viewModel.photoAlbum)
+    }
 }
