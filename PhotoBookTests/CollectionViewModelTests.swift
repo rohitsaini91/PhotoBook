@@ -76,3 +76,88 @@ extension CollectionViewModelTests {
         XCTAssertEqual(viewModel.numberOfSections(), 0)
     }
 }
+
+// MARK: numberOfItemsInSection tests
+extension CollectionViewModelTests {
+    func testNumberOfItemsInSection_ValidViewModelNilAlbum_ReturnsZero() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        viewModel.photoAlbum = nil
+        XCTAssertEqual(viewModel.numberOfItemsInSection(0), 0)
+        
+    }
+    func testNumberOfItemsInSection_ValidViewModelNilCities_ReturnsZero() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        viewModel.photoAlbum!.cities = nil
+        XCTAssertEqual(viewModel.numberOfItemsInSection(0), 0)
+        
+    }
+    func testNumberOfItemsInSection_NegtiveSectionIndex_ReturnsZero() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        XCTAssertEqual(viewModel.numberOfItemsInSection(-1), 0)
+        
+    }
+    func testNumberOfItemsInSection_OutOfBoundsSectionIndex_ReturnsZero() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        XCTAssertEqual(viewModel.numberOfItemsInSection(1000), 0) }
+    func testNumberOfItemsInSection_ValidSectionIndex_ReturnsExpectedValue() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        XCTAssertEqual(viewModel.numberOfItemsInSection(0),
+                       viewModel.photoAlbum!.cities![0].photos!.count)
+        
+    }
+}
+
+
+// MARK: cellViewModel tests
+extension CollectionViewModelTests {
+    func testCellViewModel_ValidViewModelNilAlbum_ReturnsNil() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        viewModel.photoAlbum = nil
+        XCTAssertNil(viewModel.cellViewModel(indexPath:IndexPath(row: 0,section: 0)))
+        
+    }
+    func testCellViewModel_ValidViewModelNilCities_ReturnsNil() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        viewModel.photoAlbum!.cities = nil
+        XCTAssertNil(viewModel.cellViewModel(indexPath:IndexPath(row: 0,
+                                                                 section: 0)))
+    }
+    func testCellViewModel_ValidViewModelNilPhotos_ReturnsNil() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        viewModel.photoAlbum!.cities![0].photos = nil
+        
+        XCTAssertNil(viewModel.cellViewModel(indexPath:IndexPath(row: 0,
+                                                                 section: 0)))
+    }
+    func testCellViewModel_NegtiveRowIndex_ReturnsNil() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        XCTAssertNil(viewModel.cellViewModel(indexPath:IndexPath(row: -1,section: 0)))
+    }
+    func testCellViewModel_NegtiveSectionIndex_ReturnsNil() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        
+        XCTAssertNil(viewModel.cellViewModel(indexPath:IndexPath(row: 0,section: -1))) }
+    func testCellViewModel_OutOfBoundsRowIndex_ReturnsNil() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        XCTAssertNil(viewModel.cellViewModel(indexPath:IndexPath(row: 1000,section: 0)))
+    }
+    func testCellViewModel_OutOfBoundsSectionIndex_ReturnsNil() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        XCTAssertNil(viewModel.cellViewModel(indexPath:IndexPath(row: 0,section: 1000)))
+    }
+    func testCellViewModel_ValidSectionIndex_DoesNotReturnNil() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        XCTAssertNotNil(viewModel.cellViewModel(indexPath:IndexPath(row:0,section: 0)))
+    }
+    func testCellViewModel_ValidSectionIndex_ReturnsViewModelWithExpectedModelObject() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        let rowIndex = 0
+        let sectionIndex = 0
+        let cellViewModel = viewModel.cellViewModel(indexPath:IndexPath(row: rowIndex, section: sectionIndex))
+        
+        
+        let expectedModelObject = viewModel.photoAlbum!.cities![sectionIndex].photos![rowIndex]
+        XCTAssertEqual(cellViewModel!.photo, expectedModelObject)
+        
+    }
+}

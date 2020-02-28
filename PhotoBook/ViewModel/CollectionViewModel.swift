@@ -34,5 +34,43 @@ class CollectionViewModel : NSObject {
         return cities.count
         
     }
-
+    
+    func numberOfItemsInSection(_ section: Int) -> Int {
+        guard let photoAlbum = photoAlbum,
+            let cities = photoAlbum.cities else {
+                return 0
+        }
+        
+        if ((section < 0) || (section >= cities.count)) {
+            return 0
+        }
+        guard let photos = cities[section].photos else {
+            return 0
+        }
+        return photos.count
+        
+    }
+    
+    func cellViewModel(indexPath:IndexPath) -> CollectionViewCellViewModel? {
+        guard let photoAlbum = photoAlbum,
+            let cities = photoAlbum.cities else {
+                return nil
+                
+        }
+        if ((indexPath.section < 0) || (indexPath.section >= cities.count)) {
+            return nil
+        }
+        guard let photos = cities[indexPath.section].photos else {
+            return nil
+            
+        }
+        if ((indexPath.row < 0) || (indexPath.row >= photos.count)) {
+            return nil
+        }
+        return CollectionViewCellViewModel(model:photos[indexPath.row])
+        
+    }
+    
 }
+
+
