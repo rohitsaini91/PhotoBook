@@ -22,4 +22,17 @@ class CollectionViewModel : NSObject {
         let path = Bundle.main.path(forResource: "Albums", ofType: "plist")
         photoAlbum?.load(filePath:path)
     }
+    func performInitialViewSetup() {
+        view?.setNavigationTitle("Photo Album")
+        view?.setSectionInset(top: 20, left: 0, bottom: 0, right: 0)
+        view?.setupCollectionViewCellToUseMaxWidth()
+    }
+    
+    func numberOfSections() -> Int {
+        guard let photoAlbum = photoAlbum,
+            let cities = photoAlbum.cities else { return 0}
+        return cities.count
+        
+    }
+
 }
